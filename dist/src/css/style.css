@@ -3,6 +3,51 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    background:url("../img/5559852.jpg");
+}
+h4 {
+    font-family: "Roboto", sans-serif;
+    /*https://htmlacademy.ru/blog/boost/tutorial/fonts-loading*/ /*Как подключать шрифты*/
+    text-transform: uppercase;/*Все буквы будут заглавными*/
+    font-size: 30px;
+    font-weight: normal;
+}
+.container {
+    width: 100vw;/* vw - вся ширина экрана, т.е если экран 1440 то vw = 1440, если 960 то vw = 960*/
+    height: 100vh;
+}
+
+.header {
+    height: 60px;
+    width: 100%;
+    background: #7af8f8;
+    position: fixed;
+    padding:0 50px ;
+    /*overflow: hidden;!*убирает видимость элемента за пределами блока*!*/
+    display: flex;
+    align-items: center;/*Поиграй в игру flex frog https://flexboxfroggy.com/#ru*/
+    justify-content: space-between;
+}
+.header-right {
+    display: flex;
+    height: 100%;
+
+}
+.header-navigations {
+    margin-left: 20px;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.header-navigations:hover {
+    background: #79dada;
+}
+
 .box{
 display:inline-block;
 background-color:#018bf6;
@@ -13,7 +58,7 @@ padding: 20px;
 }
 
 .div{
-    position: relative;
+    position: relative;/* relative = block, но только мы его уже можем позиционировать относительно его места*/
     border: 1px solid black;
     width: 20px;
     height: 15px;
