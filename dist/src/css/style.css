@@ -24,3 +24,10 @@ padding: 20px;
 float:right; 
 margin: 10px 10px 10px 10px;
 }
+
+.more{
+ display:inline-block;
+background-color:#018bf6;
+border: 2px solid;
+padding: 20px;
+}
