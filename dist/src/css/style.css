@@ -1,18 +1,26 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
-    background:url("../img/5559852.jpg");
+    /*background: url("../img/5559852.jpg");*/
+    background:linear-gradient(-120deg, #099cff, #74e4ff);
 }
+
+a {
+    margin-right: 5px;
+}
+
 h4 {
     font-family: "Roboto", sans-serif;
     /*https://htmlacademy.ru/blog/boost/tutorial/fonts-loading*/ /*Как подключать шрифты*/
-    text-transform: uppercase;/*Все буквы будут заглавными*/
+    text-transform: uppercase; /*Все буквы будут заглавными*/
     font-size: 30px;
     font-weight: normal;
 }
+
 h5 {
     font-family: "Montserrat", sans-serif;
     /*https://htmlacademy.ru/blog/boost/tutorial/fonts-loading*/ /*Как подключать шрифты*/
@@ -21,25 +29,17 @@ h5 {
     font-weight: normal;
 }
 
-h1{
+h1 {
     font-family: "Roboto", sans-serif;
     font-size: 50px;
     font-weight: normal;
-
+    padding: 0;
+    margin: 0;
+    max-width: 550px;
 }
-
-img{
-    padding: 3px;
-}
-
-.me{
-    margin-top: 100px;
-    margin-right: 200px;
-}
-
 
 .container {
-    width: 100vw;/* vw - вся ширина экрана, т.е если экран 1440 то vw = 1440, если 960 то vw = 960*/
+    width: 100vw; /* vw - вся ширина экрана, т.е если экран 1440 то vw = 1440, если 960 то vw = 960*/
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -51,50 +51,83 @@ img{
     width: 100%;
     background: #7af8f8;
     position: fixed;
-    padding:0 50px ;
+    padding: 0 50px;
     /*overflow: hidden;!*убирает видимость элемента за пределами блока*!*/
     display: flex;
-    align-items: center;/*Поиграй в игру flex frog https://flexboxfroggy.com/#ru*/
+    align-items: center; /*Поиграй в игру flex frog https://flexboxfroggy.com/#ru*/
     justify-content: space-between;
 }
+
 .header-right {
     display: flex;
     height: 100%;
 
 }
+
 .header-navigations {
     margin-left: 20px;
     font-family: "Montserrat", sans-serif;
     cursor: pointer;
     height: 100%;
-
     display: flex;
     align-items: center;
     padding: 5px;
 }
+
 .header-navigations:hover {
     background: #79dada;
 }
 
-.wrapper{
-    padding: 0 50px;
-    display:flex;
-    justify-content:space-between;
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+}
+.title {
+    max-width: 550px;
+}
+.imageBlock {
+        margin-top: 60px;
+}
+.wrapper-right {
+    height: 100%;
+    width: 100%;
 }
 
+/*.wrapper-right { font-size: }*/
 
-.footer{
+.footer {
     height: 120px;
     width: 100%;
     box-shadow: 1px 4px 6px 0 rgba(29, 33, 36, 0.64);
-    background:#037bfc;
+    background: #037bfc;
     padding: 0 50px;
-    display:flex;
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.footer-left{
+.footer-left {
     cursor: pointer;
+}
+.linkPhone {
+    text-decoration: none;
+    color: #dafffd;
+    font-family: Calibri, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+.linkPhone:hover {
+    color : #a1cfff;
+    border-bottom: 1px solid  #a1cfff;
+}
+.name {
+    text-transform: uppercase;
+    color: #bc28ff;
+    padding: 2px;
+    box-shadow: 1px 1px rgba(29, 33, 36, 0.08);
 }
