@@ -13,9 +13,24 @@ h4 {
     font-size: 30px;
     font-weight: normal;
 }
+h5 {
+    font-family: "Roboto", sans-serif;
+    /*https://htmlacademy.ru/blog/boost/tutorial/fonts-loading*/ /*Как подключать шрифты*/
+    text-transform: uppercase;/*Все буквы будут заглавными*/
+    font-size: 20px;
+    font-weight: normal;
+}
+
+img{
+    padding: 3px;
+}
+
 .container {
     width: 100vw;/* vw - вся ширина экрана, т.е если экран 1440 то vw = 1440, если 960 то vw = 960*/
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .header {
@@ -48,31 +63,18 @@ h4 {
     background: #79dada;
 }
 
-.box{
-display:inline-block;
-background-color:#018bf6;
-border: 2px solid;
-padding: 20px;
-
-
+.footer{
+    height: 120px;
+    width: 100%;
+    box-shadow: 1px 4px 6px 0 rgba(29, 33, 36, 0.64);
+    background:#037bfc;
+    padding: 0 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
 }
 
-.div{
-    position: relative;/* relative = block, но только мы его уже можем позиционировать относительно его места*/
-    border: 1px solid black;
-    width: 20px;
-    height: 15px;
-    overflow: hidden;
-}
-
-.right{
-float:right; 
-margin: 10px 10px 10px 10px;
-}
-
-.more{
- display:inline-block;
-background-color:#018bf6;
-border: 2px solid;
-padding: 20px;
+.footer-left{
+    cursor: pointer;
+    padding: 5px;
 }
