@@ -14,9 +14,9 @@ h4 {
     font-weight: normal;
 }
 h5 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     /*https://htmlacademy.ru/blog/boost/tutorial/fonts-loading*/ /*Как подключать шрифты*/
-    text-transform: uppercase;/*Все буквы будут заглавными*/
+    /* text-transform: uppercase;Все буквы будут заглавными */
     font-size: 20px;
     font-weight: normal;
 }
@@ -24,6 +24,11 @@ h5 {
 img{
     padding: 3px;
 }
+
+.me{
+    margin-top: 100px;
+}
+
 
 .container {
     width: 100vw;/* vw - вся ширина экрана, т.е если экран 1440 то vw = 1440, если 960 то vw = 960*/
@@ -63,6 +68,14 @@ img{
     background: #79dada;
 }
 
+.wrapper{
+    padding: 0 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+
 .footer{
     height: 120px;
     width: 100%;
@@ -76,5 +89,4 @@ img{
 
 .footer-left{
     cursor: pointer;
-    padding: 5px;
 }
